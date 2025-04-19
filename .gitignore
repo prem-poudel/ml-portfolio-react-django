@@ -24,6 +24,7 @@ dist/
 build/
 
 # Virtual environment
+backend/venv/
 venv/
 ENV/
 env/
