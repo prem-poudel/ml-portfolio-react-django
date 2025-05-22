@@ -5,7 +5,7 @@ export default function About() {
         <>
          <section
       id="about"
-      className="min-h-screen flex items-center justify-center bg-white text-gray-800 px-6 py-20"
+      className="min-h-screen flex items-center justify-center bg-white text-black px-6 py-20"
     >
       <div className="max-w-4xl text-center">
         <SectionTitle title="About Me" subtitle="Who I am and what I love to build" />

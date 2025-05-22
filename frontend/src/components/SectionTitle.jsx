@@ -1,11 +1,11 @@
 const SectionTitle = ({ title, subtitle }) => {
   return (
-    <div className="text-center mb-12">
-      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-black mb-2">
+    <div className="text-center mb-8">
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
         {title}
       </h2>
       {subtitle && (
-        <p className="text-gray-600 dark:text-gray-300 text-lg max-w-2xl mx-auto">
+        <p className="text-black dark:text-gray-700 text-lg max-w-2xl mx-auto">
           {subtitle}
         </p>
       )}
