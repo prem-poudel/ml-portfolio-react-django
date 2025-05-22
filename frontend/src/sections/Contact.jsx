@@ -17,11 +17,33 @@ function Contact() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitMessage("Your message has been sent!");
-    setTimeout(() => setSubmitMessage(""), 3000);
-    setFormData({ name: "", email: "", message: "" });
+    try{
+      const response = await fetch("http://127.0.0.1:8000/api/contact/send/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+      const data = await response.json();
+      console.log(data);
+      if (response.ok) {
+        setSubmitMessage(data.message);
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+        });
+      }
+    }
+    catch (err) {
+      setSubmitMessage("Failed to send message. Please try again later.");
+    }
+    setTimeout(() => {
+      setSubmitMessage("");
+    }, 3000);
   };
 
   return (
@@ -50,7 +72,7 @@ function Contact() {
               value={formData.name}
               onChange={handleChange}
               placeholder="Your Name"
-              className="w-full p-3 rounded-lg text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500"
+              className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500"
               required
             />
 
@@ -60,7 +82,7 @@ function Contact() {
               value={formData.email}
               onChange={handleChange}
               placeholder="Your Email"
-              className="w-full p-3 rounded-lg text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500"
+              className="w-full p-3 rounded-lg  border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500"
               required
             />
 
@@ -70,7 +92,7 @@ function Contact() {
               onChange={handleChange}
               rows="5"
               placeholder="Your Message"
-              className="w-full p-3 rounded-lg text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500"
+              className="w-full p-3 rounded-lg  border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500"
               required
             ></textarea>
 
