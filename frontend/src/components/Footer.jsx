@@ -32,7 +32,7 @@ export default function Footer() {
             <p className="text-sm max-w-xs mx-auto md:mx-0">iamprem@gmail.com</p>
             <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-3 max-w-xs mx-auto md:mx-0">
               <a
-                href="https://github.com/"
+                href="https://github.com/prem-poudel"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-white"
@@ -40,7 +40,7 @@ export default function Footer() {
                 <FontAwesomeIcon icon={faGithub} size="lg" />
               </a>
               <a
-                href="https://linkedin.com/"
+                href="hhttps://www.linkedin.com/in/prem-poudel/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-white"
@@ -48,7 +48,7 @@ export default function Footer() {
                 <FontAwesomeIcon icon={faLinkedin} size="lg" />
               </a>
               <a
-                href="https://facebook.com/"
+                href="https://www.facebook.com/iamprem024/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-white"
