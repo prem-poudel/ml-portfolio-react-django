@@ -20,7 +20,7 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try{
-      const response = await fetch("http://127.0.0.1:8000/api/contact/send/", {
+      const response = await fetch("https://ml-portfolio-react-django.onrender.com/api/contact/send/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
