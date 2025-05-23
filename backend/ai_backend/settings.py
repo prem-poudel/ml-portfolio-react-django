@@ -25,13 +25,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-+toh@$!y-a_1%+hjb*5l!6o2q!5@p4%z#8$oi0$vw5d5chqm9q"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
 # CORS settings
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
+    "https://prempoudel.com.np",
+    "http://www.prempoudel.com.np",
 ]
 
 # load environment variables from .env file
