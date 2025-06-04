@@ -14,8 +14,9 @@ const Navbar = () => {
         <nav className="hidden md:block">
           <ul className="flex space-x-6 text-white text-sm md:text-base font-medium">
             <li><a href="#about" className="hover:text-teal-400 transition">About</a></li>
-            {/* <li><a href="#projects" className="hover:text-teal-400 transition">Projects</a></li> */}
+            <li><a href="#projects" className="hover:text-teal-400 transition">Projects</a></li>
             <li><a href="#contact" className="hover:text-teal-400 transition">Contact</a></li>
+            <li><a href="#blog" className="hover:text-teal-400 transition">Blog</a></li>
             
           </ul>
         </nav>
