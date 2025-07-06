@@ -27,7 +27,7 @@ export default function Hero() {
     </span>
   </h1>
   <p className="text-lg md:text-2xl text-gray-700 max-w-xl mx-auto md:mx-0">
-    Aspiring ML/AI Engineer · React & Django Developer · Entrepreneurial Thinker
+    Django REST Developer | Aspiring ML/AI Engineer | Entrepreneurial Technologist
   </p>
   <a
     href="#projects"

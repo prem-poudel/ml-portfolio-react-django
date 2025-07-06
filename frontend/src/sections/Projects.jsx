@@ -33,11 +33,17 @@ const projects = [
     features: "User registration, Gemini Chat, Image Analysis, Google Search, Sentiment Analysis.",
     image: "https://png.pngtree.com/background/20231030/original/pngtree-d-render-of-an-adorable-ai-bot-helper-ideal-for-business-picture-image_5810378.jpg",
     link: "https://github.com/prem-poudel/python-telegram-bot"
+  },
+  {
+    title: "California Housing Price Prediction",
+    description: "Develop a predictive model to estimate the house price in California based on features like house age, income, distance from the ocean, etc.",
+    technologies: "Python, Scikit-Learn, Pandas, NumPy",
+    features: "Data preprocessing, feature engineering, model training, and evaluation.",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHEB3tbZe60CSCP-c3UxESp2FPCjWdOvjFIQ&s",
+    link: "https://github.com/prem-poudel/manual-vs-sklearn-linear-regression"
   }
-  
-
-
 ];
+
 
 export default function Projects() {
   return (
