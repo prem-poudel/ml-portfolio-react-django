@@ -1,8 +1,9 @@
 export default function Hero() {
   const blogs = [
-    { title: "How I Built My First ML Model", link: "#" },
-    { title: "React + Django: Fullstack Synergy", link: "#" },
-    { title: "Top 5 AI Tools in 2025", link: "#" },
+    // { title: "How I Built My First ML Model", link: "#" },
+    // { title: "React + Django: Fullstack Synergy", link: "#" },
+    // { title: "Top 5 AI Tools in 2025", link: "#" },
+    {title: "Still in Development", link: "#"},
   ];
 
   return (
