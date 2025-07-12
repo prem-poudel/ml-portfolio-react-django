@@ -41,6 +41,14 @@ const projects = [
     features: "Data preprocessing, feature engineering, model training, and evaluation.",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHEB3tbZe60CSCP-c3UxESp2FPCjWdOvjFIQ&s",
     link: "https://github.com/prem-poudel/manual-vs-sklearn-linear-regression"
+  },
+  {
+    title: "Responsive website with HTML, CSS, and JavaScript",
+    description: "Created a responsive website using HTML, CSS, and JavaScript.",
+    technologies: "HTML, CSS, JavaScript",
+    features: "Responsive design, user-friendly interface.",
+    image: "https://cdn.vectorstock.com/i/1000v/08/45/responsive-and-adaptive-design-vector-36140845.jpg",
+    link: "https://prem-poudel.github.io/responsive-site/"
   }
 ];
 
